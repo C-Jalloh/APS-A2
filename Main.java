@@ -37,19 +37,17 @@ public class Main {
         movieRentalSystem.registerCustomer(alp);
 
 
-        //movieRentalSystem.displayAvailableMovies();
-        //movieRentalSystem.displayCustomers();
-//        String movieByTitle = movieRentalSystem.searchMovieByTitle("Legend of Vox Machina");
-//        System.out.println(movieByTitle);
-//        ArrayList<Movie> horrorMovies = movieRentalSystem.searchMoviesByGenre(Genre.HORROR);
+        // Display available movies before renting
+        movieRentalSystem.displayAvailableMovies();
 
-//        for(Movie movie : horrorMovies) {
-//            System.out.println(movie.toString());
-//        }
-       ebrima.rentMovie(movie1);
-       ebrima.returnMovie(movie1);
-       ebrima.listRentedMovies();
-//        System.out.println(movie1.toString());
-      System.out.println( movie1.isAvailable());
+// Rent the movie
+        ebrima.rentMovie(movie1);
+
+
+// Display available movies after renting
+        movieRentalSystem.displayAvailableMovies();
+
+
+       // return the movie
     }
 }
