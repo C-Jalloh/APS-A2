@@ -31,8 +31,10 @@ public class Customer {
         if (movie.isAvailable()) {
             rentedMovies.add(movie);
             movie.rentMovie();
+            System.out.println("\n\t" + movie.getTitle() + " is rented by " + this.name +"\n");
         } else {
-            System.out.println("This Movie is not available");
+            System.out.println("\t" + movie.getTitle()  + "is not available\n ");
+
         }
     }
 
@@ -44,6 +46,7 @@ public class Customer {
     public void returnMovie(Movie movie) {
         rentedMovies.remove(movie);
         movie.returnMovie();
+        System.out.println( "\tby " + this.name +"\n");
     }
 
     /**

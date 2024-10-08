@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class Main {
 
@@ -42,6 +41,11 @@ public class Main {
 
 // Rent the movie
         ebrima.rentMovie(movie1);
+        tijan.rentMovie(movie2);
+        saiksay.rentMovie(movie4);
+        mama.rentMovie(movie3);
+        sanu.rentMovie(movie5);
+        alp.rentMovie(movie1);
 
 
 // Display available movies after renting
@@ -49,5 +53,13 @@ public class Main {
 
 
        // return the movie
+
+        ebrima.returnMovie(movie1);
+        tijan.returnMovie(movie2);
+        sanu.returnMovie(movie5);
+
+
+        // Display available movies after returning
+        movieRentalSystem.displayAvailableMovies();
     }
 }

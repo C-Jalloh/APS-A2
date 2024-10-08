@@ -72,7 +72,6 @@ public class Movie {
     public void rentMovie() {
         if (isAvailable) {
             isAvailable = false;
-            System.out.println(title + " is rented.");
         } else {
             System.out.println(title + " is already rented.");
         }
@@ -83,7 +82,7 @@ public class Movie {
      */
     public void returnMovie() {
         isAvailable = true;
-        System.out.println(title + " is returned.");
+        System.out.println("\t"+title + " is returned ");
     }
 
     /**
@@ -93,7 +92,7 @@ public class Movie {
      */
     @Override
     public String toString() {
-        return "Movie{ " + "\ttitle = " + this.title + ",\n\t\tgenre = " + this.genre + ",\n\t\treleaseYear = " + this.releaseYear + ",\n\t\tisAvailable = " + isAvailable + "\n\t}";
+        return "\nMovie { " + "\ttitle = " + this.title + ",\n\t\t\tgenre = " + this.genre + ",\n\t\t\treleaseYear = " + this.releaseYear + ",\n\t\t\tisAvailable = " + isAvailable + "\n\t  }\n";
     }
 
 }
